@@ -2,7 +2,7 @@ set dotenv-load
 set shell := ["bash", "-c"]
 
 update_prompt := "This will overwrite {{justfile()}}. Continue?"
-import 'just-commands.just'
+import 'commands.just'
 
 # ------------------------------------------------------------------------------------------
 # Boilerplate commands
