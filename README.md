@@ -32,3 +32,11 @@ mod foo
 Modify/remove these examples as needed:
 - `examples/ls.just`
 - `examples/say.just`
+
+
+## Self update
+There is an unlisted command to update the boilerplate. This will copy the justfile direct from the repository with curl.
+
+```bash
+just --unstable _self_update
+```

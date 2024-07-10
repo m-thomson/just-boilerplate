@@ -1,5 +1,6 @@
 .env
 .idea
+*.bak
 
 ### macOS template
 # General
