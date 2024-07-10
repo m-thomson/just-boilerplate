@@ -1,6 +1,6 @@
 set dotenv-load
 set shell := ["bash", "-c"]
-import '@commands.just'
+import 'just-commands.just'
 
 # ------------------------------------------------------------------------------------------
 # Boilerplate commands
@@ -16,6 +16,9 @@ import '@commands.just'
   echo "Commands shown with elipses accept subcommands. Use 'just <command>' for a list."
   echo
 
+self-update:
+  echo "{{justfile}}"
+#  just --unstable --self-update
 
 @_list just_file list_heading='Commands:':
    echo

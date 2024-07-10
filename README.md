@@ -13,7 +13,7 @@ NOTE: Two new features are coming shortly. The ability to use an env variable `J
 ### justfile 
 This is main justfile. You shouldn't need to edit this.
 
-### @modules.just
+### just-commands.just
 Define your commands in this file. A command can be defined in this file directly, or you can use the module `mod` syntax to define commands and subcommands.
 
 ```bash
