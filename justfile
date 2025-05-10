@@ -13,7 +13,7 @@ import 'commands.just'
   echo "USAGE: just <command> [arguments]"
   echo "       just <command> <subcommand> [arguments]"
   echo
-  just --unstable --list --list-prefix '  ' --list-heading $'Commands:\n'
+  just --list --list-prefix '  ' --list-heading $'Commands:\n'
   echo
   echo "Commands shown with elipses accept subcommands. Use 'just <command>' for a list."
   echo

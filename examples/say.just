@@ -7,7 +7,7 @@ list_heading := 'Say Commands:'
 
 # -- Required boilerplate (must be the first command in file)
 @_default:
-  just --unstable _list {{source_file()}} '{{list_heading}}'
+  just _list {{source_file()}} '{{list_heading}}'
 
 
 # -- Say hello to the specified user

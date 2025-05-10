@@ -2,18 +2,18 @@
 
 This is boilerplate for creating custom [just](https://github.com/casey/just) commands and subcommands. 
 
-## Caveat
-This biolerplate relies on just's `mod` directive which is experimental. Accordingly, `just` must be invoked with the `--unstable` flag. I like to use `alias j=just --unstable` in my .bashrc file.
-
-NOTE: Two new features are coming shortly. The ability to use an env variable `JUST_UNSTABLE=true` or a setting in the actual justfile(s): `set unstable`.
-
+## Install just
+If not already installed, install `just` with brew or run:
+```bash
+sudo curl --proto "=https" --tlsv1.2 -sSf https://just.systems/install.sh | sudo bash -s -- --to /usr/local/bin'
+```
 
 ## Required Files
 
-### justfile 
-This is main justfile. You shouldn't need to edit this.
+### `justfile` 
+This is the main justfile. You shouldn't need to edit this.
 
-### just-commands.just
+### `just-commands.just`
 Define your commands in this file. A command can be defined in this file directly, or you can use the module `mod` syntax to define commands and subcommands.
 
 ```bash
@@ -38,5 +38,5 @@ Modify/remove these examples as needed:
 There is an unlisted command to update the boilerplate. This will copy the justfile direct from the repository with curl.
 
 ```bash
-just --unstable _self_update
+just _self_update
 ```
